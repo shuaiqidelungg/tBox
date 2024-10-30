@@ -1,5 +1,5 @@
-# 测试配置链接（未填写夸克cookie）：https://ghp.ci/raw.githubusercontent.com/tBox2010/tBox/refs/heads/main/配置.json
-# 建议将配置转存到自己的仓库，本仓库不做规则维护，现有规则仅供学习。
+## 测试配置链接（未填写夸克cookie）：https://ghp.ci/raw.githubusercontent.com/tBox2010/tBox/refs/heads/main/配置.json
+## 建议将配置转存到自己的仓库，本仓库不做规则维护，现有规则仅供学习。
 
 # T-Box App 使用指南
 
