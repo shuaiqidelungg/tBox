@@ -1,11 +1,18 @@
+# T-Box App 使用指南
+
+## 问答
+修改配置文件未生效：每次打开app，切换站点时会重新加载一次配置文件，后续切换不会重复加载。因此修改过配置文件后建议重新打开app。
+关于加载列表慢的问题：切换站点时加载一次配置文件、加载影视列表时也需访问对应站点。因此加载慢是配置链接及站点打开速度影响，跟app无关。
+嗅探到链接后一直加载中：点击右上角感叹号可以查看是否成功嗅探到了视频链接，如已成功可尝试切换系统播放器使用。
+
+
 ## 测试配置链接（未填写夸克cookie）：
-## 加速链接：https://ghp.ci/raw.githubusercontent.com/tBox2010/tBox/refs/heads/main/配置.json
-## 原链接：https://raw.githubusercontent.com/tBox2010/tBox/refs/heads/main/peizhi.json
+加速链接：https://ghp.ci/raw.githubusercontent.com/tBox2010/tBox/refs/heads/main/配置.json
+原链接：https://raw.githubusercontent.com/tBox2010/tBox/refs/heads/main/peizhi.json
 
 ## 建议将配置转存到自己的仓库，本仓库不做规则维护，现有规则仅供学习。
 ### 支持网页嗅探播放，个别m3u8链接可能使用推荐播放器加载速度没有系统播放器快，请根据实际情况选择。
 
-# T-Box App 使用指南
 
 ## 概述
 T-Box 本身不包含任何配置，安装后需要用户自行在设置中填写配置链接。该应用无任何明广、暗广、后门，下载安装后用户需自行维护好规则，基本上能一直免费使用。请注意，应用本身不排斥科学上网工具，但出现视频列表加载失败的情况可能是由于视频站点本身不支持你的IP、或者站点本身网址错误。
