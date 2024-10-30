@@ -1,14 +1,27 @@
 {
 	"sites": [{
-		"key": "nkvlog",
-		"name": "耐看视频",
+		"key": "555dy",
+		"name": "555电影",
 		"type": 6,
-		"searchable": 0,
+		"searchable": 1,
 		"filterClass": "",
 		"firstClass": "",
 		"filterPlay": "",
 		"firstPlay": "",
-		"ext": "https://ghp.ci/raw.githubusercontent.com/tBox2010/tBox/refs/heads/main/soup/nkvlog_soup.json",
+		"ext": "https://ghp.ci/raw.githubusercontent.com/tBox2010/tBox/refs/heads/main/soup/555dy_soup.json",
+		"flagable": 0,
+		"filterPlayFileKeywords": "",
+		"keepPlayFileKeywords": ""
+	},{
+		"key": "czzy",
+		"name": "厂长资源",
+		"type": 3,
+		"searchable": 1,
+		"filterClass": "",
+		"firstClass": "",
+		"filterPlay": "",
+		"firstPlay": "",
+		"ext": "https://ghp.ci/raw.githubusercontent.com/tBox2010/tBox/refs/heads/main/xbiu/czzy_xbiu.json",
 		"flagable": 0,
 		"filterPlayFileKeywords": "",
 		"keepPlayFileKeywords": ""
@@ -130,15 +143,15 @@
 		"filterPlayFileKeywords": "",
 		"keepPlayFileKeywords": ""
 	},{
-		"key": "555dy",
-		"name": "555电影",
+		"key": "nkvlog",
+		"name": "耐看视频",
 		"type": 6,
-		"searchable": 1,
+		"searchable": 0,
 		"filterClass": "",
 		"firstClass": "",
 		"filterPlay": "",
 		"firstPlay": "",
-		"ext": "https://ghp.ci/raw.githubusercontent.com/tBox2010/tBox/refs/heads/main/soup/555dy_soup.json",
+		"ext": "https://ghp.ci/raw.githubusercontent.com/tBox2010/tBox/refs/heads/main/soup/nkvlog_soup.json",
 		"flagable": 0,
 		"filterPlayFileKeywords": "",
 		"keepPlayFileKeywords": ""
@@ -295,19 +308,6 @@
 		"filterPlay": "",
 		"firstPlay": "",
 		"ext": "https://ghp.ci/raw.githubusercontent.com/tBox2010/tBox/refs/heads/main/xbiu/348z_xbiu.json",
-		"flagable": 0,
-		"filterPlayFileKeywords": "",
-		"keepPlayFileKeywords": ""
-	},{
-		"key": "czzy",
-		"name": "厂长资源",
-		"type": 3,
-		"searchable": 1,
-		"filterClass": "",
-		"firstClass": "",
-		"filterPlay": "",
-		"firstPlay": "",
-		"ext": "https://ghp.ci/raw.githubusercontent.com/tBox2010/tBox/refs/heads/main/xbiu/czzy_xbiu.json",
 		"flagable": 0,
 		"filterPlayFileKeywords": "",
 		"keepPlayFileKeywords": ""
