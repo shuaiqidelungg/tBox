@@ -1,4 +1,4 @@
-const ucCookie='该代码不需要填写uc网盘cookie';
+const ucCookie='不支持uc，该代码不需要填写uc网盘cookie';
 const quarkCookie='替换成自己的夸克Cookie 电脑端浏览器登录夸克网盘后按F12查看';
 
 
