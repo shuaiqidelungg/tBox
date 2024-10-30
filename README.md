@@ -1,4 +1,7 @@
-## 测试配置链接（未填写夸克cookie）：https://ghp.ci/raw.githubusercontent.com/tBox2010/tBox/refs/heads/main/配置.json
+## 测试配置链接（未填写夸克cookie）：
+## 加速链接：https://ghp.ci/raw.githubusercontent.com/tBox2010/tBox/refs/heads/main/配置.json
+## 原链接：https://raw.githubusercontent.com/tBox2010/tBox/refs/heads/main/peizhi.json
+
 ## 建议将配置转存到自己的仓库，本仓库不做规则维护，现有规则仅供学习。
 ### 支持网页嗅探播放，个别m3u8链接可能使用推荐播放器加载速度没有系统播放器快，请根据实际情况选择。
 
