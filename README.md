@@ -2,12 +2,15 @@
 
 ## 问答
 修改配置文件未生效：每次打开app，切换站点时会重新加载一次配置文件，后续切换不会重复加载。因此修改过配置文件后建议重新打开app。
+
 关于加载列表慢的问题：切换站点时加载一次配置文件、加载影视列表时也需访问对应站点。因此加载慢是配置链接及站点打开速度影响，跟app无关。
+
 嗅探到链接后一直加载中：点击右上角感叹号可以查看是否成功嗅探到了视频链接，如已成功可尝试切换系统播放器使用。
 
 
 ## 测试配置链接（未填写夸克cookie）：
 加速链接：https://ghp.ci/raw.githubusercontent.com/tBox2010/tBox/refs/heads/main/配置.json
+
 原链接：https://raw.githubusercontent.com/tBox2010/tBox/refs/heads/main/peizhi.json
 
 ## 建议将配置转存到自己的仓库，本仓库不做规则维护，现有规则仅供学习。
