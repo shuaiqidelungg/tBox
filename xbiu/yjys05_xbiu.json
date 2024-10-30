@@ -1,0 +1,170 @@
+{
+	"homeUrl": "https://www.yjys05.com/",
+	"header":{
+		"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+	},
+	"cateManual": {
+		"电影": "0",
+		"电视剧": "1"
+	},
+	"list":{
+		"region":["<html>", "</html>"],
+		"url": "https://www.yjys05.com/s/all/{catePg}?type={cateId}{area}{year}{by}", 
+ 		"vod_id": ["<a target=\"_blank\" href=\"", ".htm",0,0,2],
+		"vod_name": ["<h3 class=\"mb-0 card-title text-truncate\">", "</h3>"],
+		"vod_pic":["<img src=\"", "\""],
+		"vod_remarks":["text-red-fg\">","</span>"]
+	},
+	"detail":{
+		"region":["<html>", "</html>"],
+		"url": "https://www.yjys05.com{vid}.htm",
+		"vod_name":["<h4 class=\"mb-0 text-truncate\">", "</h4>"],  
+		"vod_pic": ["og:image\" content=\"","\""], 
+		"vod_actor":["主演：</strong>","</p>"],
+		"vod_director":["导演：</strong>", "</a>",0,0,20], 
+		"vod_area":["制片国家/地区：</strong>[", "]"],
+		"vod_year":["年份：</strong>", "</p>"],
+		"vod_type":["类型：</strong>", "</p>"],
+		"vod_remarks":["摘要：</strong>","</p>"],
+		"vod_content":["剧情简介</h3>","播放列表</h3>"]
+	},
+	"playlist":{
+		"region":["<html>", "</html>"],
+		"sort": 0,
+		"url": "https://www.yjys05.com{vid}.htm",
+		"vod_play_url": ["class=\"btn btn-square me-2\" target=\"_blank\" href=\"", "\"",0,0,3],
+		"vod_play_url_title": [".htm\">", "<"],    
+		"vod_play_from": ["播放列表"]
+	},
+	"play":{
+		"region":["<html>", "</html>"],
+		"keywords":[".mp4", ".m3u8", ".flv"]
+	},
+	"searchbeiyong":{
+		"region":["<html>", "</html>"],
+		"url": "http://www.hktv03.com/vod/search.html?wd={wd}", 
+		"vod_id": ["lazyload\" href=\"/vod/detail/id/", ".html",0,0,2],
+		"vod_name": ["title=\"", "\""],
+		"vod_pic":["data-original=\"", "\""],
+		"vod_remarks":["<span class=\"tag\" style=\"background-color: #ff9900;\">","</span>"]
+	},
+ "search":{
+		"url": "http://www.hktv03.com/index.php/ajax/suggest?mid=1&wd={wd}",
+		"lookback": 3,
+		"vod_id": "id",
+		"vod_name": "name",
+		"vod_pic":"pic"
+	},
+	"filter": {
+      "0": [
+        {
+          "key": "area",
+          "name": "地区",
+          "value": [
+            {"n": "全部","v": ""},
+            {"n": "中国大陆","v": "&area=中国大陆"},
+            {"n": "中国香港","v": "&area=中国香港"},
+            {"n": "中国台湾","v": "&area=中国台湾"},        
+            {"n": "美国","v": "&area=美国"},
+            {"n": "韩国","v": "&area=韩国"},
+            {"n": "日本","v": "&area=日本"},
+            {"n": "泰国","v": "&area=泰国"},
+            {"n": "印度","v": "&area=印度"}
+          ]
+        },
+        {
+          "key": "year",
+          "name": "年份",
+          "value": [
+            {"n": "全部","v": ""},
+            {"n": "2024","v": "&year=2024"},
+            {"n": "2023","v": "&year=2023"},
+            {"n": "2022","v": "&year=2022"},
+            {"n": "2021","v": "&year=2021"},
+            {"n": "2020","v": "&year=2020"},
+            {"n": "2019","v": "&year=2019"},
+            {"n": "2018","v": "&year=2018"},
+            {"n": "2017","v": "&year=2017"},
+            {"n": "2016","v": "&year=2016"},
+            {"n": "2015","v": "&year=2015"},
+            {"n": "2014","v": "&year=2014"},
+            {"n": "2013","v": "&year=2013"},
+            {"n": "2012","v": "&year=2012"},
+            {"n": "2011","v": "&year=2011"},
+            {"n": "2010","v": "&year=2010"},
+            {"n": "2009","v": "&year=2009"},
+            {"n": "2008","v": "&year=2008"},
+            {"n": "2007","v": "&year=2007"},
+            {"n": "2006","v": "&year=2006"},
+            {"n": "2005","v": "&year=2005"},
+            {"n": "2004","v": "&year=2004"},
+            {"n": "2003","v": "&year=2003"},
+            {"n": "2002","v": "&year=2002"},
+            {"n": "2001","v": "&year=2001"}
+          ]
+        },
+        {
+          "key": "by",
+          "name": "排序",
+          "value": [
+            {"n": "时间","v": ""},
+            {"n": "评分","v": "&order=1"}
+          ]
+        }
+      ],
+      "1": [{
+          "key": "area",
+          "name": "地区",
+          "value": [
+            {"n": "全部","v": ""},
+            {"n": "中国大陆","v": "&area=中国大陆"},
+            {"n": "中国香港","v": "&area=中国香港"},
+            {"n": "中国台湾","v": "&area=中国台湾"},        
+            {"n": "美国","v": "&area=美国"},
+            {"n": "韩国","v": "&area=韩国"},
+            {"n": "日本","v": "&area=日本"},
+            {"n": "泰国","v": "&area=泰国"},
+            {"n": "印度","v": "&area=印度"}
+          ]
+        },{
+          "key": "year",
+          "name": "年份",
+          "value": [
+            {"n": "全部","v": ""},
+            {"n": "2024","v": "&year=2024"},
+            {"n": "2023","v": "&year=2023"},
+            {"n": "2022","v": "&year=2022"},
+            {"n": "2021","v": "&year=2021"},
+            {"n": "2020","v": "&year=2020"},
+            {"n": "2019","v": "&year=2019"},
+            {"n": "2018","v": "&year=2018"},
+            {"n": "2017","v": "&year=2017"},
+            {"n": "2016","v": "&year=2016"},
+            {"n": "2015","v": "&year=2015"},
+            {"n": "2014","v": "&year=2014"},
+            {"n": "2013","v": "&year=2013"},
+            {"n": "2012","v": "&year=2012"},
+            {"n": "2011","v": "&year=2011"},
+            {"n": "2010","v": "&year=2010"},
+            {"n": "2009","v": "&year=2009"},
+            {"n": "2008","v": "&year=2008"},
+            {"n": "2007","v": "&year=2007"},
+            {"n": "2006","v": "&year=2006"},
+            {"n": "2005","v": "&year=2005"},
+            {"n": "2004","v": "&year=2004"},
+            {"n": "2003","v": "&year=2003"},
+            {"n": "2002","v": "&year=2002"},
+            {"n": "2001","v": "&year=2001"}
+          ]
+        },
+        {
+          "key": "by",
+          "name": "排序",
+          "value": [
+            {"n": "时间","v": ""},
+            {"n": "评分","v": "&order=1"}
+          ]
+        }
+      ]
+}
+}
