@@ -1,5 +1,6 @@
-const ucCookie='不支持uc，该代码不需要填写uc网盘cookie';
-const quarkCookie='替换成自己的夸克Cookie 电脑端浏览器登录夸克网盘后按F12查看';
+//编写代码时，使用变量名称ucCookie、quarkCookie，编写完成后务必屏蔽掉，否则会报错（app会自动调用设置中的cookie）。
+//const ucCookie='在设置中登录uc网盘';
+//const quarkCookie='在设置中登录夸克网盘';
 
 
 function newfetch(url, options) {
@@ -280,7 +281,7 @@ async function 访问网页(url, method, postParams, cookie, headers, timeout = 
       // 发送请求并等待响应
       const response = await Promise.race([fetchPromise, timeoutPromise]);
       // 获取响应内容
-      const responseText = await response.text();
+      const responseText = await response.text(); 
       // 提取响应头中的 set-cookie
         const responseHeaders = JSON.parse(response.headers);
       // 解析 set-cookie 字段
@@ -296,6 +297,59 @@ async function 访问网页(url, method, postParams, cookie, headers, timeout = 
     }
   }
 
+
+//调试脚本时用访问网页2，调试完毕后改回访问网页
+async function 访问网页2(url, method, postParams, cookie, headers, timeout = 15000, setCookieCallback) {
+    // 定义请求方法
+    const methods = ['GET', 'POST', 'PUT'];
+    const requestMethod = methods[method] || 'GET';
+    // 构建请求头
+    const requestHeaders = {};
+    if (cookie) {
+      requestHeaders['Cookie'] = cookie;
+    }
+    if (headers) {
+      headers.split('\n').forEach(header => {
+        const index = header.indexOf(':');
+        if (index !== -1) {
+          const key = header.substring(0, index).trim();
+          const value = header.substring(index + 1).trim();
+          if (key && value) {
+            requestHeaders[key] = value;
+          }
+        }
+      });
+    }
+    // 构建请求体（仅在 POST 或 PUT 时需要）
+    let body = null;
+    if (requestMethod === 'POST' || requestMethod === 'PUT') {
+      if (postParams) {
+        body = postParams;
+      }
+    }
+    // 构建请求配置
+    const requestOptions = {
+      method: requestMethod,
+      headers: requestHeaders,
+      body: body,
+      redirect: 'follow'
+    };
+    // 创建一个 Promise 用于超时控制
+    const fetchPromise = fetch(url, requestOptions);
+    const timeoutPromise = new Promise((_, reject) => {
+      setTimeout(() => reject(new Error('Request timed out')), timeout);
+    });
+    try {
+      // 发送请求并等待响应
+      const response = await Promise.race([fetchPromise, timeoutPromise]);
+      // 获取响应内容
+      const responseText = await response.text();
+      // 返回结果
+      return responseText;
+    } catch (error) {
+      throw error;
+    }
+  }
 
 
 //playerContent('%7B%22fid_list%22%3A%5B%22ffd5fb1ba04e48bcbcb4e28fe449bbb3%22%5D%2C%22fid_token_list%22%3A%5B%22d84fe7f65cb8ae991beb66104222e653%22%5D%2C%22fid_size%22%3A5627266634%2C%22to_pdir_fid%22%3A%22%E6%9A%82%E5%AE%9A%22%2C%22pwd_id%22%3A%226dc9cce602e4%22%2C%22isQuark%22%3Atrue%2C%22stoken%22%3A%22DTPUGX1BRFxmEHFdRaFDBGEvq%2FfiI5T0rHSYL0CyH7E%3D%22%2C%22pdir_fid%22%3A%220%22%2C%22scene%22%3A%22link%22%7D')
