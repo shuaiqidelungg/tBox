@@ -350,7 +350,8 @@
 		"ext": "https://raw.githubusercontent.com/tBox2010/tBox/refs/heads/main/xpath/dm84_xpath.json",
 		"flagable": 0,
 		"filterPlayFileKeywords": "",
-		"keepPlayFileKeywords": ""
+		"keepPlayFileKeywords": "",
+		"selectedPlayer": "1"
 	},{
 		"key": "qimiqimi",
 		"name": "奇米动漫",
