@@ -68,7 +68,7 @@ T-Box 是一款影视资源嗅探和播放应用，用户可以通过配置链�
 - `type=0`：苹果CMS影视对应的XML格式
 - `type=1`：苹果CMS影视对应的JSON格式
 - `type=2`：tvbox对应的xpath规则
-- `type=3`：xbiu规则
+- `type=3`：xbiu规则（在剧集获取时，部分站点可能会获取失败。建议使用soup规则）
 - `type=4`：xbiubiu规则
 - `type=5`：js爬虫脚本（对技术要求稍高）
 - `type=6`：soup规则（推荐）
