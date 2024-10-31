@@ -13,6 +13,19 @@
 		"filterPlayFileKeywords": "",
 		"keepPlayFileKeywords": ""
 	},{
+		"key": "wogg",
+		"name": "玩偶哥哥",
+		"type": 5,
+		"searchable": 1,
+		"filterClass": "",
+		"firstClass": "",
+		"filterPlay": "",
+		"firstPlay": "夸克网盘,夸克网盘2",
+		"ext": "https://raw.githubusercontent.com/tBox2010/tBox/refs/heads/main/js/wogg.js",
+		"flagable": 0,
+		"filterPlayFileKeywords": "",
+		"keepPlayFileKeywords": ""
+	},{
 		"key": "czzy",
 		"name": "厂长资源",
 		"type": 3,
@@ -548,7 +561,7 @@
 		"keepPlayFileKeywords": ""
 	},{
 		"key": "yunpan",
-		"name": "云盘资源(仅搜索 未设置cookie)",
+		"name": "云盘资源(仅搜索)",
 		"type": 5,
 		"searchable": 1,
 		"filterClass": "",
@@ -556,19 +569,6 @@
 		"filterPlay": "",
 		"firstPlay": "",
 		"ext": "https://raw.githubusercontent.com/tBox2010/tBox/refs/heads/main/js/yunpan.js",
-		"flagable": 0,
-		"filterPlayFileKeywords": "",
-		"keepPlayFileKeywords": ""
-	},{
-		"key": "wogg",
-		"name": "玩偶哥哥(未设置cookie)",
-		"type": 5,
-		"searchable": 1,
-		"filterClass": "",
-		"firstClass": "",
-		"filterPlay": "",
-		"firstPlay": "夸克网盘,夸克网盘2",
-		"ext": "https://raw.githubusercontent.com/tBox2010/tBox/refs/heads/main/js/wogg.js",
 		"flagable": 0,
 		"filterPlayFileKeywords": "",
 		"keepPlayFileKeywords": ""
